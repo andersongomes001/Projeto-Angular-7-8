@@ -7,4 +7,11 @@
 <div> 
 	Mês selecionado: {{ mes_selecionado }}
 </div>
+
+<div>
+	<p *ngIf="mostrar; then sim else nao"> texto</p>
+	<ng-template #sim> mostrar </ng-template>
+	<ng-template #nao> não mostrar </ng-template>
+</div>
+
 <button (click)="evento($event)">Click</button>

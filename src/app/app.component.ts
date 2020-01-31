@@ -8,9 +8,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   public title = 'Projeto Angular 7/8';
   public mes_selecionado = '';
+  public mostrar = false;
   meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
 
   evento(e: Event) {
-    console.log(e.type);
+    if(this.mostrar){
+      this.mostrar = false;
+    }else{
+      this.mostrar = true;
+    }
   }
 }
