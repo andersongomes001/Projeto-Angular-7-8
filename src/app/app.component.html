@@ -18,4 +18,11 @@
 	<p appChangetext>change text</p>
 </div>
 
+
+<div>
+	primeiro pipe
+	<input [(ngModel)]="numero" type="number">
+	<p>{{ numero | primeiropipe  }}</p>
+</div>
+
 <button (click)="evento($event)">Click</button>

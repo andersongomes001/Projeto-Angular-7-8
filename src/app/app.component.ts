@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   public title = 'Projeto Angular 7/8';
   public mes_selecionado = '';
+  public numeronumero = 0;
   public mostrar = false;
   meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
 

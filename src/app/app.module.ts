@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { PrimeirocomponenteComponent } from './primeirocomponente/primeirocomponente.component';
 import { FormsModule } from '@angular/forms';
 import { ChangetextDirective } from './changetext.directive';
+import { PrimeiropipePipe } from './primeiropipe.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     PrimeirocomponenteComponent,
-    ChangetextDirective
+    ChangetextDirective,
+    PrimeiropipePipe
   ],
   imports: [
     BrowserModule,
