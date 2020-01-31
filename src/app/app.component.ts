@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Projeto Angular 7/8';
-  mes_selecionado = '';
+  public title = 'Projeto Angular 7/8';
+  public mes_selecionado = '';
   meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+
+  evento(e: Event) {
+    console.log(e.type);
+  }
 }
