@@ -1,2 +1,10 @@
 <router-outlet></router-outlet>
+<div> Meses : 
+   <select [(ngModel)]="mes_selecionado"> 
+      <option *ngFor = "let i of meses">{{i}}</option> 
+   </select> 
+</div> 
+<div> 
+	Mês selecionado: {{ mes_selecionado }}
+</div>
 <app-primeirocomponente></app-primeirocomponente>
